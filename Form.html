@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Application Form</title>
+        <style>
+           .h4{
+            text-align: center;
+            column-span: 2px;
+           }
+            .line{
+                border-top:10px solid black;
+                border-bottom: 5px solid black;
+                border-left: 10px solid black;
+                padding: 10px;
+            }
+            td{
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body style="background-color: whitesmoke;" >
+        <div class="line">
+            <h4  style="text-align: center;font-family: 'Times New Roman', Times, serif; font-size: 40px;">Person Details</h4>
+            <hr border="4">
+        <form>
+            <table algin="center" cellpadding="1px" >
+            
+                <tr  style="font-family: 'Times New Roman', Times, serif; font-size: 15px;">
+                    <td><label for="a1">User Name :</label></td>
+                    <td><input  id="a1" type="text"/></td>
+                </tr>
+                <tr style="font-family: 'Times New Roman', Times, serif; font-size: 15px;">
+                    <td><label for="a6">Password:</label></td>
+                    <td><input  id="a6" type="text"/></td>
+                </tr>
+                <tr style="font-family: 'Times New Roman', Times, serif; font-size: 15px;">
+                    <td><label for="a5">Email ID:</label></td>
+                    <td><input  id="a5" type="text"/></td>
+                </tr>
+                <tr style="font-family: 'Times New Roman', Times, serif; font-size: 15px;">
+                    <td><label for="a4">Telephone:</label></td>
+                    <td><input  id="a4" type="text"/></td>
+                </tr>
+                <tr style="font-family: 'Times New Roman', Times, serif; font-size: 15px;">
+                    <td><label for="a2">Date of  Birth:</label></td>
+                    <td><input id="a2" type="date"></td>
+                </tr>
+                <tr style="font-family: 'Times New Roman', Times, serif; font-size: 15px;">
+                    <td><label for="a3">Gender :</label></td>
+                    <td><input  type="radio" name="gen"/><label>Male</label>
+                    <input type="radio" name="gen"/><label>Female</label>
+                    <input type="radio" name="gen"/><label>Others</label>
+                </td>
+                </tr>
+                <tr style="font-family: 'Times New Roman', Times, serif; font-size: 15px;">
+                    <td><label for="a7">Likes:</label></td>
+                    <td><input  type="checkbox" name="like"/><label>Foot Ball</label>
+                    <input type="checkbox" name="like"/><label>Hocket</label>
+                    </td>
+                </tr>
+                <tr  style="font-family: 'Times New Roman', Times, serif; font-size: 15px;">
+                    <td><label for="a8">Presesnt Address:</label></td>
+                    <td><textarea id="a8" rows="5"></textarea></td>
+                </tr>
+                <tr style="font-family: 'Times New Roman', Times, serif; font-size: 15px;">
+                    <td><label for="a9">Permanent Address:</label></td>
+                    <td><textarea id="a9" rows="5"></textarea></td>
+                </tr><br>
+                <tr style="font-family: 'Times New Roman', Times, serif; font-size: 15px;">
+                    <td>
+                    <label for="like">What do you like to eat?</label></td>
+                    <td>
+                    <select name="like" id="like">
+                        <option value="veg">Vegitarian</option>
+                        <option value="none">Non-Vegitarian</option>
+                        <option value="none">Vegan</option>
+                        <option value="none">None</option>
+                      </select>
+                     </td> 
+                </tr>
+                <tr style="font-family: 'Times New Roman', Times, serif; font-size: 25px;">
+                    <td></td>
+                    <td><input type="submit" value="Submit"/>
+                    <input type="reset" value="Reset"/></td>
+                </tr>
+                
+            </table>
+            
+        </form>
+        <hr border="3">
+    </div>
+    </body>
+</html>
