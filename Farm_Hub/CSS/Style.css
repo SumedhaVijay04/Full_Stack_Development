@@ -1,0 +1,234 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Container */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #444;
+    position: fixed; /* Make the header fixed */
+    width: 100%; /* Ensure it spans the full width of the page */
+    top: 0; /* Position it at the top */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Adjust the body top padding to account for the fixed header */
+body {
+    background-image: url('../img/background2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 70px; /* Adjust this value based on the header height */
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+/* Site Title */
+.site-title {
+    color: white;
+    font-size: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+
+.navbar a {
+    margin-left: 20px;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown .dropbtn {
+    font-size: 25px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 20px;
+    background-color: inherit;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    font-style: italic;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: lightgray;
+}
+
+/* Search Bar Styling */
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input[type="text"] {
+    padding: 6px;
+    margin-right: 10px;
+    border: none;
+    font-size: 17px;
+    border-radius: 4px;
+}
+
+.search button {
+    padding: 6px 10px;
+    background: white;
+    color: green;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.search button i {
+    font-size: 18px;
+}
+
+.search button:hover {
+    background: black;
+    color: white;
+}
+
+/* FontAwesome Icon Size */
+.fa-shopping-cart {
+    font-size: 40px; /* Increased the font size */
+    color: white;
+    margin-left: 10px;
+    
+}
+
+/* City Dropdown Styling */
+.city select {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #444;
+    color: white;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+/* Sign In/Sign Up Buttons */
+.sign-in button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.sign-in button:hover {
+    background-color: #cc5200;
+}
+
+/* Content Box Styling */
+.content-box {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    margin: 20px auto; /* Move the content slightly to the right */
+    max-width: 1100px; /* Limit the width of the content */
+    align-items: center;
+    text-align: justify;
+}
+
+.H1 {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+    color: #333;
+    text-align: justify;
+}
+
+/* Adjustments for H2 (Why Choose Us) */
+.H2 {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+    color: #333;
+    text-align: justify;
+}
+
+/* General Text Adjustments */
+.P1 {
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+
+.img1 {
+    width: 100%; /* Make the image responsive to the container width */
+    max-width: 400px; /* Set a maximum width to prevent the image from being too large */
+    height: 400px; /* Maintain the aspect ratio of the image */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below the image */
+    float: right; /* Float the image to the left */
+    margin-right: 20px; /* Space between the image and the text */
+    border-color: black;
+    border-style:groove;
+    border-width: 5px;
+}
+    
+
+
